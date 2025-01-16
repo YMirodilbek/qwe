@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <div class="Bqsim" style="display: flex; gap: 30px;">
+        <img src="{% static 'removed.png' %}">
+        <p style="margin-top: 25px;">Департамент регистрации населения <br>
+            при Министерстве цифрового развития Кыргызской Республики</p>
+    </div>
+    <table style="margin-left: 50px;">
+        <tr>
+            <td>Статус регистрации:</td>
+            <td>{{certificate.Статус_регистрации}}</td>
+        </tr>
+        <tr>
+            <td>Регистрационный талон:</td>
+            <td>{{certificate.Регистрационный_талон}}</td>
+        </tr>
+        <tr>
+            <td>Регистрация с: </td>
+            <td>{{certificate.Регистрация}}</td>
+        </tr>
+        <tr>
+            <td>Регистрация по: </td>
+            <td>{{certificate.Регистрация_по}}</td>
+        </tr>
+        <tr>
+            <td>Номер паспорта: </td>
+            <td>{{certificate.Номер_паспорта}}</td>
+        </tr>
+        <tr>
+            <td>Страна паспорта: </td>
+            <td>{{certificate.Страна_паспорта}}</td>
+        </tr>
+        <tr>
+            <td>Фамилия:</td>
+            <td>{{certificate.Фамилия}}</td>
+        </tr>
+        <tr>
+            <td>Имя:</td>
+            <td>{{certificate.Имя}}</td>
+        </tr>
+        <tr>
+            <td>Отчество:</td>
+            <td>{{certificate.Отчество}}</td>
+        </tr>
+        <tr>
+            <td>Дата рождения:</td>
+            <td>{{certificate.Дата_рождения}}</td>
+        </tr>
+        <tr>
+            <td>Адрес проживания:</td>
+            <td class="ddd">{{certificate.Адрес_проживания}}</td>
+        </tr>
+    </table>
+</body>
+
+</html>
